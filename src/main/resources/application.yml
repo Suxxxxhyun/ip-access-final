@@ -1,0 +1,30 @@
+spring:
+  application:
+    name: ipLogAnalyzer
+
+  servlet:
+    multipart:
+      max-request-size: 50MB
+      max_file-size: 50MB
+
+ipinfo:
+  base-url: https://api.ipinfo.io/lite
+  token: ${IP_TOKEN}
+  timeout-millis: 1000
+
+springdoc:
+  api-docs:
+    enabled: true
+  swagger-ui:
+    enabled: true
+    path: /swagger-ui.html
+  override-with-generic-response: false
+
+resilience4j:
+  retry:
+    instances:
+      ipinfoRetry:
+        max-attempts: 2
+        wait-duration: 1s
+        retry-exceptions:
+          - org.springframework.web.client.RestClientException
