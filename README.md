@@ -99,7 +99,7 @@ com.ipaccessanalyzer
 - 정상/에러 모두 `totalCount`에 포함되어 전체 규모를 보존합니다.
 - 에러 원문은 `SamplingReportItem`으로 샘플링되며 최대 5건만 보관합니다.
 
-**DDD 기반 확장성 설계**
+**확장성 설계**
 - 도메인(`domain`)은 핵심 규칙과 모델을 보유하고, 애플리케이션(`application`)은 유스케이스를 오케스트레이션합니다.
 - 프레젠테이션(`presentation`)과 인프라(`infrastructure`)는 기술 세부사항을 담당하며 도메인에 의존합니다.
 - `LogParser` 인터페이스를 통해 CSV 외의 포맷(예: JSON, TSV)으로 파서를 교체할 수 있습니다.
