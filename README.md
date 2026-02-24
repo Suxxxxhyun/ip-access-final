@@ -1,3 +1,5 @@
+[v2는 해당 링크를 통홰 확인 가능](https://github.com/Suxxxxhyun/ip-access-final2)
+
 # IP Access Analyzer
 
 CSV 액세스 로그 파일을 REST API로 분석/요약합니다. 대용량 파일에서도 안정적으로 동작하고, 잘못된 라인이나 외부 API 실패에 견고하며, 필드 확장에 유연하도록 설계했습니다. 결과는 상위 경로/상태코드 비율/접속 IP 등의 통계를 제공합니다.
